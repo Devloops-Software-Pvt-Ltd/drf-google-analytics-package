@@ -5,7 +5,7 @@ class GAConfiguration(models.Model):
     property_id = models.CharField(max_length=50)
     measurement_id = models.CharField(max_length=50)
     api_secret = models.CharField(max_length=100)
-    credentials_json = models.JSONField()  # Encrypted in real case
+    credentials_json = models.TextField()  # Encrypted in real case
 
 class GAEventLog(models.Model):
 

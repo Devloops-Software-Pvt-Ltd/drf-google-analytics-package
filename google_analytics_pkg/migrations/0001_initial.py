@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
                 ('property_id', models.CharField(max_length=50)),
                 ('measurement_id', models.CharField(max_length=50)),
                 ('api_secret', models.CharField(max_length=100)),
-                ('credentials_json', models.JSONField()),
+                ('credentials_json', models.TextField()),
             ],
         ),
     ]
