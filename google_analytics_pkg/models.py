@@ -7,6 +7,10 @@ class GAConfiguration(models.Model):
     api_secret = models.CharField(max_length=100)
     credentials_json = models.TextField()  # Encrypted in real case
 
+    # HTML verification tag for Google Search Console (optional)
+    # store the meta tag or verification snippet here; nullable so existing installs won't break
+    search_console_html_tag = models.TextField(null=True, blank=True)
+
 class GAEventLog(models.Model):
 
     event_name = models.CharField(max_length=100)
