@@ -11,6 +11,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='gaconfiguration',
             name='search_console_html_tag',
-            field=models.TextField(null=True, blank=True),
+            field=models.TextField(),
         ),
     ]
