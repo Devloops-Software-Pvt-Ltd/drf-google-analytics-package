@@ -6,7 +6,7 @@ class GAConfiguration(models.Model):
     measurement_id = models.CharField(max_length=50)
     api_secret = models.CharField(max_length=100)
     credentials_json = models.TextField()  # Encrypted in real case
-    search_console_html_tag = models.TextField()
+    search_console_html_tag = models.TextField(null=True, blank=True)
     
 class GAEventLog(models.Model):
 
