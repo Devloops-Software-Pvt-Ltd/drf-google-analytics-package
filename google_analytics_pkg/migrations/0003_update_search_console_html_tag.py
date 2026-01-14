@@ -8,7 +8,7 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.AddField(
+        migrations.AlterField(
             model_name='gaconfiguration',
             name='search_console_html_tag',
             field=models.TextField(null=True, blank=True),
