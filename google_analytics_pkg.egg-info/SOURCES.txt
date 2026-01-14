@@ -12,4 +12,5 @@ google_analytics_pkg.egg-info/dependency_links.txt
 google_analytics_pkg.egg-info/requires.txt
 google_analytics_pkg.egg-info/top_level.txt
 google_analytics_pkg/migrations/0001_initial.py
+google_analytics_pkg/migrations/0002_add_search_console_html_tag.py
 google_analytics_pkg/migrations/__init__.py

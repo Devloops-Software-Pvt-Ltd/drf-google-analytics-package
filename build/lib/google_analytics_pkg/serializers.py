@@ -6,7 +6,7 @@ class GAConfigurationSerializer(serializers.ModelSerializer):
     id = serializers.IntegerField(required=False) 
     class Meta:
         model = GAConfiguration
-        fields = ['id','property_id', 'measurement_id', 'api_secret', 'credentials_json']
+        fields = ['id','property_id', 'measurement_id', 'api_secret', 'credentials_json', 'search_console_html_tag']
 class GAEventLogSerializer(serializers.ModelSerializer):
     class Meta:
         model = GAEventLog
