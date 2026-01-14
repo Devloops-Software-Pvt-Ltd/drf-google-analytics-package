@@ -11,6 +11,7 @@ class GAConfiguration(models.Model):
     # store the meta tag or verification snippet here; nullable so existing installs won't break
     search_console_html_tag = models.TextField(null=True, blank=True)
 
+
 class GAEventLog(models.Model):
 
     event_name = models.CharField(max_length=100)
